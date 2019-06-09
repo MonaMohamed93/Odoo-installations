@@ -7,21 +7,25 @@ In this tutorial I will learn you how to install Odoo 12 community or enterprise
 
 The first step is to download my script from Github and to add the code in a new .sh file on your Ubuntu machine, wherever you’d like this.
 For example right under /home. Open up an Ubuntu terminal and cd to the directory where you’d like to keep the script and then create the file:
+
 sudo wget https://raw.githubusercontent.com/Yenthe666/InstallScript/12.0/odoo_install.sh
 
 
 If you’re curious about how the whole code looks and works you can find it on my Github account.
 Now open up the file and edit the parameters to your liking:
+
 sudo nano odoo_install.sh
 
 
 There are some things you can configure/change to your likings at the top of the script. You can choose if you wish to install Wkhtmltopdf or not, which version you’d like, where the location is and most importantly what the master admin password is.
 Tip: always modify this for every Odoo you install!
 If you want the enterprise version of V12 you should change the line IS_ENTERPRISE to true:
+
 IS_ENTERPRISE="True"
 
 
 If you want the community version you can just continue and keep the IS_ENTERPRISE key on “False” (which is the case by default):
+
 IS_ENTERPRISE="False"
 
 
@@ -29,12 +33,14 @@ IS_ENTERPRISE="False"
 
 The next step is to make this file executable. After you’ve made it executable you can execute it and everything will be installed automatically.
 do this with the following command:
+
 sudo chmod +x odoo_install.sh
 
 
 3.Running the script
 
 Now that the code is in your file and the file is executable you simply have to execute it with the following command:
+
 ./odoo_install.sh
 
 
